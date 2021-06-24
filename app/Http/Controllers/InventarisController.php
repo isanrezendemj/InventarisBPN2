@@ -38,10 +38,7 @@ class InventarisController extends Controller
 
     {
         $request->validate([
-
-            'No_Aset' => 'required|unique:Inventaris',
-      
-
+            'No_Aset' => 'required|unique:App\Models\Inventaris',
         ]);
 
     

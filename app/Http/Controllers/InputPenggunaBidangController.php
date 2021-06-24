@@ -14,7 +14,7 @@ class InputPenggunaBidangController extends Controller
      */
     public function index()
     {
-        return view('inputpenggunabidang');
+        return view('InputPenggunaBidang');
     }
 
     /**

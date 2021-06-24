@@ -14,7 +14,7 @@ class InputPenggunaPegawaiController extends Controller
      */
     public function index()
     {
-        return view('inputpenggunapegawai');
+        return view('InputPenggunaPegawai');
     }
 
     /**

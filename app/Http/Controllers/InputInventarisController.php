@@ -14,7 +14,7 @@ class InputInventarisController extends Controller
      */
     public function index()
     {
-        return view('inputinventaris');
+        return view('InputInventaris');
     }
 
     /**
