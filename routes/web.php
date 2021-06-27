@@ -10,7 +10,7 @@ use App\Http\Controllers\InventarisController;
 use App\Http\Controllers\InputPenggunaPegawaiController;
 use App\Http\Controllers\InputPenggunaBidangController;
 use App\Http\Controllers\InputInventarisController;
-use App\Http\Controllers\inputregistermobileController;
+use App\Http\Controllers\InputRegisterMobileController;
 use App\Http\Controllers\RegisterMobileController;
 use App\Http\Controllers\HomeController;
 
