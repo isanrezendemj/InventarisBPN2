@@ -32,17 +32,19 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 // imported
-
-//AUTh
-Route::get('/logout', [LoginController::class, 'logout']);
-
-// jika di panggil register admin
-Route::get('/RegisterMobile', [RegisterMobileController::class, 'index']);
-Route::post('/simpan-data-register', [RegisterMobileController::class, 'store']);
-Route::get('/delete-data-register/{id_security}', [RegisterMobileController::class, 'delete_single_data']);
+Route::middleware(['auth'])->group(function () {
+    
+    //AUTh
+    Route::get('/logout', [LoginController::class, 'logout']);
 
 
-// jika dipanggil URL input inventaris
+    // jika di panggil register admin
+    Route::get('/RegisterMobile', [RegisterMobileController::class, 'index']);
+    Route::post('/simpan-data-register', [RegisterMobileController::class, 'store']);
+    Route::get('/delete-data-register/{id_security}', [RegisterMobileController::class, 'delete_single_data']);
+
+
+    // jika dipanggil URL input inventaris
     
     Route::get('/Inventaris', [InventarisController::class, 'index']);
     Route::post('/simpan-data-inventaris', [InventarisController::class, 'store']);
@@ -87,4 +89,5 @@ Route::get('/delete-data-register/{id_security}', [RegisterMobileController::cla
 
 
 
-// });
+    // });
+});
