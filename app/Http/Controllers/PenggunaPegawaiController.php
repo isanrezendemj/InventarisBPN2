@@ -42,7 +42,7 @@ class PenggunaPegawaiController extends Controller
         $Penggunapegawai->Nama_Pegawai_PPNPN = $request->Nama_Pegawai_PPNPN;
         $Penggunapegawai->Bidang = $request->Bidang;
         $Penggunapegawai->Status = $request->Status ;
-        $Penggunapegawai->Kode_Aset = $request->Kode_Aset;
+        $Penggunapegawai->No_Aset = $request->No_Aset;
         $Penggunapegawai->Nama_Barang = $request->Nama_Barang;
         $Penggunapegawai->Kondisi = $request->Kondisi;
         $file=$request->file('Image');
@@ -79,7 +79,7 @@ class PenggunaPegawaiController extends Controller
         $Penggunapegawai->Nama_Pegawai_PPNPN = $request->Nama_Pegawai_PPNPN;
         $Penggunapegawai->Bidang = $request->Bidang;
         $Penggunapegawai->Status = $request->Status ;
-        $Penggunapegawai->Kode_Aset = $request->Kode_Aset;
+        $Penggunapegawai->No_Aset = $request->No_Aset;
         $Penggunapegawai->Nama_Barang = $request->Nama_Barang;
         $Penggunapegawai->Kondisi = $request->Kondisi;
 

@@ -17,7 +17,7 @@
             <tr>
                 <th>No</th>
                 <th>Nama Barang</th>
-                <th>Kode Aset</th>
+                <th>No Aset</th>
                 <th>Tgl Peroleh</th>
                 <th>Asal Perolehan</th>
                 <th>Rupiah Aset</th>
@@ -44,9 +44,7 @@
                 <td scope="row">{{ $test->Kondisi }}</td>
                 <td scope="row"><img src="{{ 'storage/'.$test->Image }}" width="100px" /></td>
                 <td>
-                    <!-- <a href="{{url('/edit-data-inventaris/'.$test->id)}}" class="badge badge-success">Edit</a>
-                    <a href="{{url('/delete-data-inventaris/'.$test->id)}}" class="badge badge-success">delete</a> -->
-
+                   
                     <a href="{{url('/edit-data-inventaris/'.$test->id)}}" class="badge badge-warning m-2"><i
                             class="fas fa-fw fa-edit"></i> Edit</a>
                     <a href="{{url('/delete-data-inventaris/'.$test->id)}}" class="badge badge-danger m-2"><i
@@ -93,6 +91,8 @@ $(".getQR").on('click', function() {
     let code = $(this).data('code');
     qrcode.makeCode(code);
     $('.codeValue').html(code);
+
+    // save image
     let sumber = document.querySelector("#capture");
 
     setTimeout(() => {
@@ -121,7 +121,7 @@ $(document).ready(function() {
             {
                 extend: 'excel',
                 exportOptions: {
-                    columns: ':visible'
+                    columns: [0, 1, 2, 3, 4, 5, 6, 7]
                 },
             }
         ]

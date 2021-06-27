@@ -92,6 +92,10 @@ h5 {
                     class="fa fa-users fa-fw"></i> 
                 Pengguna Pegawai dan PPNPN</a>
 
+            <a href="/RegisterMobile" class="w3-bar-item w3-button w3-padding" style="color: white"> <i
+                    class="fa fa-users fa-fw"></i> 
+                Register Admin Mobile</a>
+
             <a href="{{ url('/register') }}" class="w3-bar-item w3-button w3-padding" style="color: white"> <i
                     class=""></i> 
                 Register</a>

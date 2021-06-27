@@ -10,6 +10,8 @@ use App\Http\Controllers\InventarisController;
 use App\Http\Controllers\inputpenggunapegawaiController;
 use App\Http\Controllers\InputPenggunaBidangController;
 use App\Http\Controllers\InputInventarisController;
+use App\Http\Controllers\inputregistermobileController;
+use App\Http\Controllers\RegisterMobileController;
 use App\Http\Controllers\HomeController;
 
 /*
@@ -34,13 +36,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 //AUTh
 Route::get('/logout', [LoginController::class, 'logout']);
 
-//register aut
-// Route::get('/register', function () {
-//     route('register');
-// });
+// jika di panggil register admin
+Route::get('/RegisterMobile', [RegisterMobileController::class, 'index']);
+Route::post('/simpan-data-register', [RegisterMobileController::class, 'store']);
+Route::get('/delete-data-register/{id_security}', [RegisterMobileController::class, 'delete_single_data']);
 
-//register
-// Route::get('/register', [HomeController::class, 'index_register'])->name('register');
 
 // jika dipanggil URL input inventaris
     
@@ -63,6 +63,11 @@ Route::get('/logout', [LoginController::class, 'logout']);
     Route::get('/delete-data-penggunapegawai/{NRP_NIK}', [PenggunapegawaiController::class, 'delete_single_data']);
     Route::get('/edit-data-penggunapegawai/{NRP_NIK}', [PenggunapegawaiController::class, 'edit_single_data']);
     Route::post('/proses-edit-penggunapegawai', [PenggunapegawaiController::class, 'proses_edit']);
+
+
+
+    // input register mobile
+    Route::get('/inputregistermobile', [inputregistermobileController::class, 'index']);
 
 
     // JIKA DIPANGGIL URL template

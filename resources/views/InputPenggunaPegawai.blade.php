@@ -61,10 +61,10 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="Kode Aset" class="col-2">Kode Aset :</label>
+                    <label for="No Aset" class="col-2">No Aset :</label>
                     <div class="col-10">
-                        <input type="text" class="form-control" name="Kode_Aset" placeholder="Masukkan Kode Aset" required
-                            oninvalid="this.setCustomValidity('harap isikan nama lengkap')"
+                        <input type="text" class="form-control" name="No_Aset" placeholder="Masukkan No Aset" required
+                            oninvalid="this.setCustomValidity('isi')"
                             oninput="this.setCustomValidity('')" autocapitalize="off">
                     </div>
                 </div>

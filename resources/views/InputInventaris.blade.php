@@ -12,14 +12,7 @@
     <form action="/simpan-data-inventaris" method="post" enctype="multipart/form-data">
         @csrf
 
-        <!-- <div class="form-group row">
-            <label for="id Barang" class="col-2">Id Barang :</label>
-            <div class="col-10">
-                <input type="text" onkeypress="return angka(event)" class="form-control" name="id" placeholder="ID"
-                    required oninvalid="this.setCustomValidity('harap isikan ID')" oninput="this.setCustomValidity('')"
-                    autocomplete="off">
-            </div>
-        </div> -->
+       
         <br>
 
         <div class="form-group row">

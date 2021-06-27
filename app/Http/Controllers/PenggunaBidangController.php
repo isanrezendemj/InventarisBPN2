@@ -40,7 +40,7 @@ class PenggunaBidangController extends Controller
         $PenggunaBidang = new Pengguna_bidang();
         $PenggunaBidang->Kode_Bidang = $request->Kode_Bidang;
         $PenggunaBidang->Nama_Bidang = $request->Nama_Bidang;
-        $PenggunaBidang->Kode_Aset = $request->Kode_Aset;
+        $PenggunaBidang->No_Aset = $request->No_Aset;
         $PenggunaBidang->Nama_Barang = $request->Nama_Barang ;
         $PenggunaBidang->Kondisi = $request->Kondisi;
         $file=$request->file('Image');
@@ -72,9 +72,9 @@ class PenggunaBidangController extends Controller
     public function proses_edit(Request $request) {
         
         $PenggunaBidang = Pengguna_bidang::where('Kode_Bidang', $request->input('Kode_Bidang'))->first();
-        $PenggunaBidang->Kode_Bidang = $request->Kode_Bidang;
+        // $PenggunaBidang->Kode_Bidang = $request->Kode_Bidang;
         $PenggunaBidang->Nama_Bidang = $request->Nama_Bidang;
-        $PenggunaBidang->Kode_Aset = $request->Kode_Aset;
+        $PenggunaBidang->No_Aset = $request->No_Aset;
         $PenggunaBidang->Nama_Barang = $request->Nama_Barang ;
         $PenggunaBidang->Kondisi = $request->Kondisi;
         if($request->file('Image') != null){

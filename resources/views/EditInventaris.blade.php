@@ -22,15 +22,7 @@
                 </div>
             </div>
 
-            <div class="form-group row">
-                <label for="Kode Barang" class="col-2">Kode Barang :</label>
-                <div class="col-10">
-                    <input type="text" value="{{$article->Kode_Barang}}" class="form-control" name="Kode_Barang"
-                        placeholder="Kode Barang" required
-                        oninvalid="this.setCustomValidity('harap isikan Kode Barang')"
-                        oninput="this.setCustomValidity('')" autocapitalize="off">
-                </div>
-            </div>
+        
 
             <div class="form-group row">
                 <label for="Nama Barang" class="col-2">Nama Barang:</label>
@@ -115,10 +107,10 @@
             <div class="form-group row">
                 <label for="Image" class="col-2">image :</label>
                 <div class="col-10">
-                    <input type="file" value="{{$article->Image}}" name="Image" placeholder="Masukkan Nama Barang">
+                    <input type="file" value="{{$article->Image}}" name="Image" placeholder="Ambiol">
                 </div>
             </div>
-            <button type="submit">Edit</button>
+            <button type="submit"style="background-color:#452414; color:white;">Simpan</button>
         </form>
     </div>
     @endsection

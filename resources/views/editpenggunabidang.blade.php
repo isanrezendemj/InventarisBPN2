@@ -22,18 +22,25 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="Nama Bidang" class="col-2">Nama Bidang:</label>
+                    <label for="Nama_Bidang" class="col-2">Nama Bidang:</label>
                     <div class="col-10">
-                        <input type="text"  value="{{$article->Nama_Bidang}}" onkeypress="return angka(event)" class="form-control" name="Nama_Bidang"
-                            placeholder="Nama bidang" required oninvalid="this.setCustomValidity('harap isikan ')"
-                            oninput="this.setCustomValidity('')" autocomplete="off">
+                        <select type="text" name="Nama_Bidang" class="form-control">
+                            <option value="">Nama Bidang</option>
+                            <option value="Bagian Tata Usaha Kanwil Aceh">Bagian Tata Usaha Kanwil Aceh</option>
+                            <option value="Bidang Survei dan Pemetaan Kanwil Aceh">Bidang Survei dan Pemetaan Kanwil Aceh</option>
+                            <option value="Bidang Penetapan Hak dan Pendaftaran Kanwil Aceh">Bidang Penetapan Hak dan Pendaftaran Kanwil Aceh</option>
+                            <option value="Bidang Penataan dan Pemberdayaan Kanwil Aceh">Bidang Penataan dan Pemberdayaan Kanwil Aceh</option>
+                            <option value="Bidang Pengadaan Tanah dan Pengembangan Kanwil Aceh">Bidang Pengadaan Tanah dan Pengembangan Kanwil Aceh</option>
+                            <option value="Bidang Pengendalian dan Penanganan Sengketa Kanwil Aceh">Bidang Pengendalian dan Penanganan Sengketa Kanwil Aceh</option>  
+                        </select>
                     </div>
                 </div>
 
+
                 <div class="form-group row">
-                    <label for="Kode Barang" class="col-2">Kode Barang:</label>
+                    <label for="No_Aset" class="col-2">No Aset:</label>
                     <div class="col-10">
-                        <input type="text"  value="{{$article->Kode_Barang}}" class="form-control" name="Kode_Barang" placeholder="Kode Barang" required
+                        <input type="text"  value="{{$article->No_Aset}}" class="form-control" name="No_Aset" placeholder="No Aset" required
                             oninvalid="this.setCustomValidity('harap isikan dengan lengkap')"
                             oninput="this.setCustomValidity('')" autocapitalize="off">
                     </div>
@@ -48,18 +55,7 @@
                     </div>
                 </div>  
 
-                <div class="form-group row">
-                    <label for="Kategori" class="col-2">Kategori:</label>
-                    <div class="col-10">
-                        <select type="text" name="Kategori" class="form-control">
-                            <option value="">Kategori</option>
-                            <option value="Furniture">Furniture</option>
-                            <option value="Elektronik">Elektronik</option>
-                            <option value="kendaraan">kendaraan</option>
-                            
-                        </select>
-                    </div>
-                </div>
+                
 
                 <div class="form-group row">
                     <label for="Kondisi" class="col-2">Kondisi:</label>
@@ -80,7 +76,7 @@
                     </div>
                 </div>
 
-    <button type="submit">Edit</button>
+                <button type="submit"style="background-color:#452414; color:white;">Simpan</button>
   </form>
 </div>
 @endsection

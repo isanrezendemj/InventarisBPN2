@@ -21,9 +21,8 @@
                 <th>Nama Pegawai/PPNPN</th>
                 <th>Bidang</th>
                 <th>Status</th>
-                <th>Kode Aset</th>
+                <th>No Aset</th>
                 <th>Nama Barang</th>
-               
                 <th>Kondisi</th>
                 <th>Image</th>
                 <th>Aksi</th>
@@ -39,10 +38,10 @@
                 <td scope="row">{{ $test->Nama_Pegawai_PPNPN }}</td>
                 <td scope="row">{{ $test->Bidang }}</td>
                 <td scope="row">{{ $test->Status}}</td>
-                <td scope="row">{{ $test->Kode_Aset}}</td>
+                <td scope="row">{{ $test->No_Aset}}</td>
                 <td scope="row">{{ $test->Nama_Barang}}</td>
                 <td scope="row">{{ $test->Kondisi}}</td>
-                <td scope="row"><img src="{{ 'storage/'.$test->Image }}" width="30px" /></td>
+                <td scope="row"><img src="{{ 'storage/'.$test->Image }}" width="100px" /></td>
                 <td>
                     <a href="{{url('/edit-data-penggunapegawai/'.$test->NRP_NIK)}}" class="badge badge-warning m-2"><i
                             class="fas fa-fw fa-edit"></i> Edit</a>

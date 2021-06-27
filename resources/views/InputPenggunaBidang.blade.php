@@ -39,10 +39,10 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="Kode_Aset" class="col-2">Kode Aset:</label>
+                    <label for="No_Aset" class="col-2">No Aset:</label>
                     <div class="col-10">
-                        <input type="text" onkeypress="return angka(event)" class="form-control" name="Kode_Aset"
-                            placeholder="Masukan Kode Aset" required oninvalid="this.setCustomValidity('harap isikan Kode Barang')"
+                        <input type="text" onkeypress="return angka(event)" class="form-control" name="No_Aset"
+                            placeholder="Masukan Kode Aset" required oninvalid="this.setCustomValidity('harap isikan No Aset')"
                             oninput="this.setCustomValidity('')" autocomplete="off">
                     </div>
                 </div>

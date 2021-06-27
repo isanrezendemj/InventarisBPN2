@@ -18,7 +18,7 @@
                 <th>No</th>
                 <th>Kode Bidang</th>
                 <th>Nama Bidang</th>
-                <th>Kode Aset</th>
+                <th>No Aset</th>
                 <th>Nama Barang</th>    
                 <th>Kondisi</th>
                 <th>Image</th>
@@ -32,10 +32,10 @@
                 <td scope="row">{{ $loop->iteration }}</td>
                 <td scope="row">{{ $test->Kode_Bidang }}</td>
                 <td scope="row">{{ $test->Nama_Bidang }}</td>
-                <td scope="row">{{ $test->Kode_Aset }}</td>
+                <td scope="row">{{ $test->No_Aset }}</td>
                 <td scope="row">{{ $test->Nama_Barang}}</td>
                 <td scope="row">{{ $test->Kondisi}}</td>
-                <td scope="row"><img src="{{ 'storage/'.$test->Image }}" width="30px" /></td>
+                <td scope="row"><img src="{{ 'storage/'.$test->Image }}" width="100px" /></td>
                 <td>
 
                     <a href="{{url('/edit-data-penggunabidang/'.$test->Kode_Bidang)}}"
