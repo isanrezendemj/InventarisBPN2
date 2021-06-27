@@ -88,7 +88,8 @@ var qrcode = new QRCode("qrcode");
 
 $(".getQR").on('click', function() {
     $("#ambilGambar").addClass("disabled");
-    let code = $(this).data('code');
+    let code = $(this).data('code').toString();
+    //console.log(code);
     qrcode.makeCode(code);
     $('.codeValue').html(code);
 
@@ -99,7 +100,7 @@ $(".getQR").on('click', function() {
         html2canvas(sumber)
             .then(canvas => {
                 let img = canvas.toDataURL("image/png");
-                console.log(img);
+                //console.log(img);
                 $("#ambilGambar").attr("href", img);
                 $("#ambilGambar").attr("download", code + ".png");
             });

@@ -31,7 +31,8 @@
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.print.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.colVis.min.js"></script>
 <script type="text/javascript" src="{{ asset('/Chart.js') }}"></script>
-<script type="text/javascript" src="{{ asset('/qrcode.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/qrcode.js') }}"></script>
+
 <script type="text/javascript" src="{{ asset('/html2canvas.min.js') }}"></script>
 
 <style>

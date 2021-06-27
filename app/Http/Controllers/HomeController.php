@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use \App\models\Inventaris;
-use \App\models\Pengguna_bidang;
-use \App\models\Pengguna_pegawai;
+use \App\Models\Inventaris;
+use \App\Models\Pengguna_bidang;
+use \App\Models\Pengguna_pegawai;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
