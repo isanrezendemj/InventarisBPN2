@@ -10,8 +10,8 @@ class Pengguna_bidang extends Model
     // use HasFactory;
     
     protected $table ="pengguna_bidang";
-    protected $primaryKey = 'Kode_Bidang';
+    protected $primaryKey = 'id';
     protected $fillable = [
-        'Kode_Bidang', 'Nama_Bidang','No_Aset','Nama_Barang','Kondisi','Image'
+        'id','Kode_Bidang', 'Nama_Bidang','No_Aset','Nama_Barang','Kondisi','Image'
     ];
 }

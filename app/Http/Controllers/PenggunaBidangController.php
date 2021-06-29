@@ -16,7 +16,6 @@ class PenggunaBidangController extends Controller
     {
         $PenggunaBidang = \App\Models\Pengguna_bidang::all();
         return view('PenggunaBidang', ['pengguna_bidang' => $PenggunaBidang]);
-
     }
     /**
      * Show the form for creating a new resource.
@@ -36,19 +35,19 @@ class PenggunaBidangController extends Controller
      */
     public function store(Request $request)
     {
-     
         $PenggunaBidang = new Pengguna_bidang();
+        $PenggunaBidang->id = $request->id;
         $PenggunaBidang->Kode_Bidang = $request->Kode_Bidang;
         $PenggunaBidang->Nama_Bidang = $request->Nama_Bidang;
         $PenggunaBidang->No_Aset = $request->No_Aset;
         $PenggunaBidang->Nama_Barang = $request->Nama_Barang ;
         $PenggunaBidang->Kondisi = $request->Kondisi;
         $file=$request->file('Image');
-        $file->move("storage/",$file->getClientOriginalName());
+        $file->move("storage/", $file->getClientOriginalName());
         $PenggunaBidang->Image=$file->getClientOriginalName();
         
       
-        $PenggunaBidang->save(); 
+        $PenggunaBidang->save();
         return redirect('/penggunabidang');
     }
 
@@ -69,25 +68,25 @@ class PenggunaBidangController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function proses_edit(Request $request) {
-        
-        $PenggunaBidang = Pengguna_bidang::where('Kode_Bidang', $request->input('Kode_Bidang'))->first();
-        // $PenggunaBidang->Kode_Bidang = $request->Kode_Bidang;
+    public function proses_edit(Request $request)
+    {
+        $PenggunaBidang = Pengguna_bidang::where('id', $request->input('id'))->first();
+        $PenggunaBidang->Kode_Bidang = $request->Kode_Bidang;
         $PenggunaBidang->Nama_Bidang = $request->Nama_Bidang;
         $PenggunaBidang->No_Aset = $request->No_Aset;
         $PenggunaBidang->Nama_Barang = $request->Nama_Barang ;
         $PenggunaBidang->Kondisi = $request->Kondisi;
-        if($request->file('Image') != null){
-          // dd('masuk');
-          $file=$request->file('Image');
-          $file->move("storage/",$file->getClientOriginalName());
-          $PenggunaBidang->Image=$file->getClientOriginalName();
-      }
+        if ($request->file('Image') != null) {
+            // dd('masuk');
+            $file=$request->file('Image');
+            $file->move("storage/", $file->getClientOriginalName());
+            $PenggunaBidang->Image=$file->getClientOriginalName();
+        }
       
         $PenggunaBidang->update();
         
         return redirect('penggunabidang');
-      }
+    }
 
     /**
      * Update the specified resource in storage.
@@ -96,15 +95,16 @@ class PenggunaBidangController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit_single_data($id) {
-        $output = 'Kode Bidang';
-        $article = Pengguna_bidang::where('Kode_Bidang', $id)->first();
+    public function edit_single_data($id)
+    {
+        $output = 'id';
+        $article = Pengguna_bidang::where('id', $id)->first();
         
         return view('editpenggunabidang', array(
           'content' => $output,
           'article' => $article
         ));
-      }
+    }
 
     /**
      * Remove the specified resource from storage.
@@ -114,8 +114,8 @@ class PenggunaBidangController extends Controller
      */
     public function delete_single_data($id)
     {
-       Pengguna_bidang::where('Kode_Bidang',$id)->delete();
+        Pengguna_bidang::where('id', $id)->delete();
 
-       return redirect('penggunabidang');
+        return redirect('penggunabidang');
     }
 }

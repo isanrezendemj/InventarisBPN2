@@ -19,7 +19,7 @@
                 <th>Kode Bidang</th>
                 <th>Nama Bidang</th>
                 <th>No Aset</th>
-                <th>Nama Barang</th>    
+                <th>Nama Barang</th>
                 <th>Kondisi</th>
                 <th>Image</th>
                 <th>Aksi</th>
