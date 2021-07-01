@@ -38,8 +38,8 @@
                 <td scope="row"><img src="{{ 'storage/'.$test->Image }}" width="100px" /></td>
                 <td>
 
-                    <a href="{{url('/edit-data-penggunabidang/'.$test->Kode_Bidang)}}"
-                        class="badge badge-warning m-2"><i class="fas fa-fw fa-edit"></i> Edit</a>
+                    <a href="{{url('/edit-data-penggunabidang/'.$test->id)}}" class="badge badge-warning m-2"><i
+                            class="fas fa-fw fa-edit"></i> Edit</a>
                     <a href="{{url('/delete-data-penggunabidang/'.$test->Kode_Bidang)}}"
                         class="badge badge-danger m-2"><i class="fas fa-fw fa-trash"></i> delete</a>
                 </td>
