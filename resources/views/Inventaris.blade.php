@@ -44,7 +44,7 @@
                 <td scope="row">{{ $test->Kondisi }}</td>
                 <td scope="row"><img src="{{ 'storage/'.$test->Image }}" width="100px" /></td>
                 <td>
-                   
+
                     <a href="{{url('/edit-data-inventaris/'.$test->id)}}" class="badge badge-warning m-2"><i
                             class="fas fa-fw fa-edit"></i> Edit</a>
                     <a href="{{url('/delete-data-inventaris/'.$test->id)}}" class="badge badge-danger m-2"><i
@@ -88,9 +88,10 @@ var qrcode = new QRCode("qrcode");
 
 $(".getQR").on('click', function() {
     $("#ambilGambar").addClass("disabled");
-    let code = $(this).data('code').toString();
+    let code = $(this).data('code')
+.toString(); ///code di ambil dri parameter data-code dan kemudian dibuat string
     //console.log(code);
-    qrcode.makeCode(code);
+    qrcode.makeCode(code); ///qr code di ambek dri var qr code  makecode merupakan method dri class QRCode
     $('.codeValue').html(code);
 
     // save image

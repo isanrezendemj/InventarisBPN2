@@ -22,10 +22,14 @@
 </script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+<!-- tabel  -->
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.0/js/dataTables.buttons.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.bootstrap4.min.js"></script>
+<!-- button -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<!-- file zip -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<!-- pdf -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.html5.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.print.min.js"></script>
@@ -52,8 +56,7 @@ h5 {
 <body class="background-color:#f1f2f7;">
 
     <!-- Top container -->
-    <div class="w3-bar w3-top  w3-large" style="z-index:-1;    color: #fff!important;
-    background-color:#f1f2f7
+    <div class="w3-bar w3-top  w3-large" style="z-index:-1;color: #fff!important;background-color:#f1f2f7;
     height: 43px">
         <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
             onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
@@ -116,6 +119,7 @@ h5 {
     <div class="w3-main" style="background-color: #f1f2f7;;;margin-left:330px;">
         <!-- ISI DALAM YANG AKAN BERUBAH -->
         @yield('content')
+        <!-- yield untuk di panggil di kerangka file view -->
     </div>
 
     <style>
