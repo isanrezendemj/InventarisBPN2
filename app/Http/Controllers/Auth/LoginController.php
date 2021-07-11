@@ -33,7 +33,8 @@ class LoginController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    public function __construct() 
+    // method utama yg dijalankan ketika aplikasi di akses, midleware untuk guest jdi klo gada except gabisa logout
     {
         $this->middleware('guest')->except('logout');
     }

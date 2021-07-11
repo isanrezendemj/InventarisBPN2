@@ -1,6 +1,8 @@
 @extends('layout/main')
+<!-- menampilkan halaman dari folder layout pada file main -->
 
 @section('content')
+<!-- menampilkan sebagian kerangka dari folder layout pada file main -->
 <!-- Header -->
 <header class="w3-container" style="padding-top:22px;">
     <h5><b style="padding-left: 20;"><i class="fa fa-users fa-fw"></i> Pengguna Bidang</b></h5>
@@ -40,8 +42,8 @@
 
                     <a href="{{url('/edit-data-penggunabidang/'.$test->id)}}" class="badge badge-warning m-2"><i
                             class="fas fa-fw fa-edit"></i> Edit</a>
-                    <a href="{{url('/delete-data-penggunabidang/'.$test->Kode_Bidang)}}"
-                        class="badge badge-danger m-2"><i class="fas fa-fw fa-trash"></i> delete</a>
+                    <a href="{{url('/delete-data-penggunabidang/'.$test->id)}}" class="badge badge-danger m-2"><i
+                            class="fas fa-fw fa-trash"></i> delete</a>
                 </td>
             </tr>
             @endforeach

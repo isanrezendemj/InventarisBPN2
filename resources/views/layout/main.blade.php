@@ -22,10 +22,14 @@
 </script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+<!-- tabel  -->
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.0/js/dataTables.buttons.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.bootstrap4.min.js"></script>
+<!-- button -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<!-- file zip -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<!-- pdf -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.html5.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.print.min.js"></script>
@@ -52,8 +56,7 @@ h5 {
 <body class="background-color:#f1f2f7;">
 
     <!-- Top container -->
-    <div class="w3-bar w3-top  w3-large" style="z-index:-1;    color: #fff!important;
-    background-color:#f1f2f7
+    <div class="w3-bar w3-top  w3-large" style="z-index:-1;color: #fff!important;background-color:#f1f2f7;
     height: 43px">
         <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
             onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
@@ -65,7 +68,7 @@ h5 {
     :#272c33;" id="mySidebar">
         <div class="w3-container w3-row" style="height:80px; padding-top: 35px">
             <div class="w3-col s4">
-                <img src="logo.png" class="w3-circle w3-margin-right" style="width:46px">
+                <img src="{{ asset('logo.png') }}" class="w3-circle w3-margin-right" style="width:46px">
             </div>
             <div class="w3-col s8 w3-bar pt-2">
                 <span style="color: white;">Welcome, <strong>Admin</strong></span><br>
@@ -116,6 +119,7 @@ h5 {
     <div class="w3-main" style="background-color: #f1f2f7;;;margin-left:330px;">
         <!-- ISI DALAM YANG AKAN BERUBAH -->
         @yield('content')
+        <!-- yield untuk di panggil di kerangka file view -->
     </div>
 
     <style>

@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-        
+
 
             <div class="form-group row">
                 <label for="Nama Barang" class="col-2">Nama Barang:</label>
@@ -96,12 +96,15 @@
             <div class="form-group row">
                 <label for="Kondisi" class="col-2">Kondisi:</label>
                 <div class="col-10">
-                    <select type="text" value="{{$article->Kondisi}}" name="Kondisi" class="form-control">
+                    <select type="text" value="{{$article->Kondisi}}" name="Kondisi" id="kondisi" class="form-control">
                         <option value="">Kondisi Barang</option>
                         <option value="bagus">Bagus</option>
-                        <option value="bagus">Rusak</option>
+                        <option value="rusak">Rusak</option>
 
                     </select>
+                    <script>
+                    $("#kondisi").val("{{$article->Kondisi}}");
+                    </script>
                 </div>
             </div>
             <div class="form-group row">
@@ -110,7 +113,7 @@
                     <input type="file" value="{{$article->Image}}" name="Image" placeholder="Ambiol">
                 </div>
             </div>
-            <button type="submit"style="background-color:#452414; color:white;">Simpan</button>
+            <button type="submit" style="background-color:#452414; color:white;">Simpan</button>
         </form>
     </div>
     @endsection

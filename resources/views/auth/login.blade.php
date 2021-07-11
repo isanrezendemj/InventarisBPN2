@@ -10,6 +10,7 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
+                        <!-- csrf = untuk mengantisiapasi http injection -->
 
                         <div class="form-group row">
                             <label for="email"

@@ -25,7 +25,7 @@ class InventarisController extends Controller
      */
     public function create()
     {
-       // 
+        //
     }
 
     /**
@@ -35,7 +35,6 @@ class InventarisController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-
     {
         $request->validate([
             'No_Aset' => 'required|unique:App\Models\Inventaris',
