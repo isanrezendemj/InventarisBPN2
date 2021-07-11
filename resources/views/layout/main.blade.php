@@ -65,7 +65,7 @@ h5 {
     :#272c33;" id="mySidebar">
         <div class="w3-container w3-row" style="height:80px; padding-top: 35px">
             <div class="w3-col s4">
-                <img src="logo.png" class="w3-circle w3-margin-right" style="width:46px">
+                <img src="{{ asset('logo.png') }}" class="w3-circle w3-margin-right" style="width:46px">
             </div>
             <div class="w3-col s8 w3-bar pt-2">
                 <span style="color: white;">Welcome, <strong>Admin</strong></span><br>
