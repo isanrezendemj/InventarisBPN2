@@ -15,7 +15,7 @@
     <div class="form-group row">
                     <label for="Kode Bidang" class="col-2">Kode Bidang:</label>
                     <div class="col-10">
-                        <input type="text" value="{{$article->Kode_Bidang}}" onkeypress="return angka(event)" class="form-control" name="Kode_Bidang"value="{{$article->id}}"
+                        <input type="text" value="{{$article->Kode_Bidang}}" onkeypress="return angka(event)" class="form-control" readonly="true"  name="Kode_Bidang"value="{{$article->id}}"
                             placeholder="Kode bidang" required oninvalid="this.setCustomValidity('harap isikan ')"
                             oninput="this.setCustomValidity('')" autocomplete="off">
                     </div>
