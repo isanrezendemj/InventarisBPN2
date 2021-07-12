@@ -56,8 +56,8 @@ Route::middleware(['auth'])->group(function () {
     // JIKA DIPANGGIL URL penggunabidang
     Route::get('/penggunabidang', [PenggunaBidangController::class, 'index']);
     Route::post('/simpan-data-bidang', [PenggunaBidangController::class, 'store']);
-    Route::get('/delete-data-penggunabidang/{Kode_Bidang}', [PenggunaBidangController::class, 'delete_single_data']);
-    Route::get('/edit-data-penggunabidang/{Kode_Bidang}', [PenggunaBidangController::class, 'edit_single_data']);
+    Route::get('/delete-data-penggunabidang/{id}', [PenggunaBidangController::class, 'delete_single_data']);
+    Route::get('/edit-data-penggunabidang/{id}', [PenggunaBidangController::class, 'edit_single_data']);
     Route::post('/proses-edit-penggunabidang', [PenggunaBidangController::class, 'proses_edit']);
 
     // JIKA DIPANGGIL URL penggunapegawai

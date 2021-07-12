@@ -71,7 +71,7 @@ class PenggunaBidangController extends Controller
     public function proses_edit(Request $request)
     {
         $PenggunaBidang = Pengguna_bidang::where('id', $request->input('id'))->first();
-        $PenggunaBidang->Kode_Bidang = $request->Kode_Bidang;
+        // $PenggunaBidang->Kode_Bidang = $request->Kode_Bidang;
         $PenggunaBidang->Nama_Bidang = $request->Nama_Bidang;
         $PenggunaBidang->No_Aset = $request->No_Aset;
         $PenggunaBidang->Nama_Barang = $request->Nama_Barang ;

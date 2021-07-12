@@ -14,7 +14,7 @@
             {{csrf_field()}}
 
             <div style="display: none" class="form-group row">
-                <label for="id Barang" class="col-2">Id Barang :</label>
+                <label for="id" class="col-2">Id Barang :</label>
                 <div class="col-10">
                     <input type="text" value="{{$article->id}}" onkeypress="return angka(event)" class="form-control"
                         name="id" placeholder="ID" required oninvalid="this.setCustomValidity('harap isikan ID')"
