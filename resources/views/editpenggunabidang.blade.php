@@ -53,6 +53,7 @@
                             <form method="POST" action="{{url('/proses-edit-penggunabidang')}}"
                                 enctype="multipart/form-data">
                                 {{csrf_field()}}
+
                                 <div class="form-group row">
                                     <label for="Kode Bidang" class="col-2">Kode Bidang:</label>
                                     <div class="col-10">
