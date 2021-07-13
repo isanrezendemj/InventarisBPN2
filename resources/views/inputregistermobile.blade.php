@@ -14,15 +14,6 @@
         <form action="/simpan-data-register" method="post" enctype="multipart/form-data">
             @csrf
 
-            <div class="form-group row">
-                <label for="id_security" class="col-2">id:</label>
-                <div class="col-10">
-                    <input type="text" onkeypress="return angka(event)" class="form-control" name="id_security"
-                        placeholder="id security" required
-                        oninvalid="this.setCustomValidity('harap isikan Kode Bidang')"
-                        oninput="this.setCustomValidity('')" autocomplete="off">
-                </div>
-            </div>
 
             <div class="form-group row">
                 <label for="nama" class="col-2">Nama:</label>

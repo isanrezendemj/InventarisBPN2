@@ -31,16 +31,9 @@ class RegisterMobileController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-
-            'id_security' => 'required|unique:tb_security_code',
-      
-
-        ]);
-
+       
     
         $RegisterMobile = new tb_security_code();
-        $RegisterMobile->id_security = $request->id_security;
         $RegisterMobile->nama = $request->nama;
         $RegisterMobile->code = $request->code;
      
