@@ -11,9 +11,10 @@
 <div class="container">
     <div class="container">
 
-        <form action="/simpan-data-register" method="post" enctype="multipart/form-data">
+        <form action="{{ route('simpan-data-mobile') }}" method="post" enctype="multipart/form-data">
             @csrf
 
+	    <!--
             <div class="form-group row">
                 <label for="id_security" class="col-2">id:</label>
                 <div class="col-10">
@@ -23,6 +24,7 @@
                         oninput="this.setCustomValidity('')" autocomplete="off">
                 </div>
             </div>
+	    -->
 
             <div class="form-group row">
                 <label for="nama" class="col-2">Nama:</label>

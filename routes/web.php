@@ -41,7 +41,7 @@ Route::middleware(['auth'])->group(function () {
 
     // jika di panggil register admin
     Route::get('/RegisterMobile', [RegisterMobileController::class, 'index']);
-    Route::post('/simpan-data-register', [RegisterMobileController::class, 'store']);
+    Route::post('/simpan-data-register', [RegisterMobileController::class, 'store'])->name('simpan-data-mobile');
     Route::get('/delete-data-register/{id_security}', [RegisterMobileController::class, 'delete_single_data']);
 
 
