@@ -1,6 +1,6 @@
 @extends('layout/main')
-@section('content')
 
+@section('content')
 <!-- Header -->
 <header class="w3-container" style="padding-top:22px;">
     <h5><b style="padding-left: 20;"><i class="fa fa-users fa-fw"></i> Edit Data Pengguna Bidang</b></h5>
@@ -47,13 +47,14 @@
                     <script>
                     $("#Nama_Bidang").val("{{$article->Nama_Bidang}}");
                     </script>
-
-                    <div class="container">
+		</div>
+		</div>
+                    <!-- <div class="container"> 
                         <div class="padding_this">
                             <form method="POST" action="{{url('/proses-edit-penggunabidang')}}"
                                 enctype="multipart/form-data">
                                 {{csrf_field()}}
-
+-->
                                 <div class="form-group row">
                                     <label for="Kode Bidang" class="col-2">Kode Bidang:</label>
                                     <div class="col-10">
@@ -65,7 +66,7 @@
                                     </div>
 
                                 </div>
-                        </div>
+                        <!--</div>-->
 
 
                         <div class="form-group row">
@@ -118,8 +119,3 @@
         </form>
     </div>
     @endsection
-
-    <button type="submit" style="background-color:#452414; color:white;">Simpan</button>
-    </form>
-</div>
-@endsection
