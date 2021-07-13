@@ -70,15 +70,14 @@ class PenggunaBidangController extends Controller
      */
     public function proses_edit(Request $request)
     {
-<<<<<<< HEAD
+
         $PenggunaBidang = Pengguna_bidang::where('id', $request->input('id'))->first();
         // $PenggunaBidang->Kode_Bidang = $request->Kode_Bidang;
-=======
 	 //dd($request->input('id'));
 	//dd($request);
         $PenggunaBidang = Pengguna_bidang::where('Kode_Bidang', $request->Kode_Bidang)->first();
        // $PenggunaBidang->Kode_Bidang = $request->Kode_Bidang;
->>>>>>> bb28a2d534f42bc33ba73aa41a781857237107db
+
         $PenggunaBidang->Nama_Bidang = $request->Nama_Bidang;
         $PenggunaBidang->No_Aset = $request->No_Aset;
         $PenggunaBidang->Nama_Barang = $request->Nama_Barang ;
