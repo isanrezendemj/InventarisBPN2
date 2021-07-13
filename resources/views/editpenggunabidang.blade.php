@@ -51,7 +51,6 @@
                 </div>
             </div>
 
-
             <div class="form-group row">
                 <label for="Kode Bidang" class="col-2">Kode Bidang:</label>
                 <div class="col-10">
