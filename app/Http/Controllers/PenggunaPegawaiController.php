@@ -84,7 +84,6 @@ class PenggunaPegawaiController extends Controller
         $Penggunapegawai->Kondisi = $request->Kondisi;
 
         if($request->file('Image') != null){
-          // dd('masuk');
           $file=$request->file('Image');
           $file->move("storage/",$file->getClientOriginalName());
           $Penggunapegawai->Image=$file->getClientOriginalName();

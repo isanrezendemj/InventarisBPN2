@@ -14,6 +14,16 @@
             {{csrf_field()}}
 
             <div class="form-group row">
+                <label for="NRP_NIK" class="col-2">NRP/NIK:</label>
+                <div class="col-10">
+                    <input type="text" value="{{$article->NRP_NIK}}" onkeypress="return angka(event)"
+                        class="form-control" name="NRP_NIK" placeholder="NRP/NIK" required
+                        oninvalid="this.setCustomValidity('harap isikan nrp/nik')" oninput="this.setCustomValidity('')"
+                        autocomplete="off">
+                </div>
+            </div>
+
+            <div class="form-group row">
                 <label for="Nama_Pegawai_PPNPN" class="col-2">Nama :</label>
                 <div class="col-10">
                     <input type="text" value="{{$article->Nama_Pegawai_PPNPN}}" class="form-control"
