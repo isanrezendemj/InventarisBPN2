@@ -72,18 +72,12 @@ class PenggunaBidangController extends Controller
     {
 
         $PenggunaBidang = Pengguna_bidang::where('id', $request->input('id'))->first();
-        // $PenggunaBidang->Kode_Bidang = $request->Kode_Bidang;
-	 //dd($request->input('id'));
-	//dd($request);
         $PenggunaBidang = Pengguna_bidang::where('Kode_Bidang', $request->Kode_Bidang)->first();
-       // $PenggunaBidang->Kode_Bidang = $request->Kode_Bidang;
-
         $PenggunaBidang->Nama_Bidang = $request->Nama_Bidang;
         $PenggunaBidang->No_Aset = $request->No_Aset;
         $PenggunaBidang->Nama_Barang = $request->Nama_Barang ;
         $PenggunaBidang->Kondisi = $request->Kondisi;
         if ($request->file('Image') != null) {
-            // dd('masuk');
             $file=$request->file('Image');
             $file->move("storage/", $file->getClientOriginalName());
             $PenggunaBidang->Image=$file->getClientOriginalName();
