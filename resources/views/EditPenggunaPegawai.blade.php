@@ -34,10 +34,9 @@
             </div>
 
             <div class="form-group row">
-                <label for="Nama_Bidang" class="col-2">Bidang:</label>
+                <label for="Bidang" class="col-2">Bidang:</label>
                 <div class="col-10">
-                    <select type="text" value="{{$article->Nama_Bidang}}" name="Nama_Bidang" id="Nama_Bidang"
-                        class="form-control">
+                    <select type="text" value="{{$article->Bidang}}" name="Bidang" id="Bidang" class="form-control">
                         <option value="">Bidang</option>
                         <option value="Bagian Tata Usaha Kanwil Aceh">Bagian Tata Usaha Kanwil Aceh</option>
                         <option value="Bidang Survei dan Pemetaan Kanwil Aceh">Bidang Survei dan Pemetaan Kanwil Aceh
@@ -53,7 +52,7 @@
 
                     </select>
                     <script>
-                    $("#Nama_Bidang").val("{{$article->Nama_Bidang}}");
+                    $("#Bidang").val("{{$article->Bidang}}");
                     </script>
                 </div>
             </div>
