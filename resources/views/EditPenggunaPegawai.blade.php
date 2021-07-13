@@ -60,12 +60,15 @@
             <div class="form-group row">
                 <label for="Status" class="col-2">Status:</label>
                 <div class="col-10">
-                    <select type="text" value="{{$article->Status}}" name="Status" class="form-control">
+                    <select type="text" value="{{$article->Status}}" name="Status" id="Status" class="form-control">
                         <option value="">Status</option>
                         <option value="Pegawai">Pegawai</option>
                         <option value="PPNPN">PPNPN</option>
 
                     </select>
+                    <script>
+                    $("#Status").val("{{$article->Status}}");
+                    </script>
                 </div>
             </div>
 
