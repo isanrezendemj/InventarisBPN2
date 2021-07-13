@@ -97,7 +97,7 @@
             <div class="form-group row">
                 <label for="Image" class="col-2">Image :</label>
                 <div class="col-10">
-                    <input type="file" name="Image" placeholder="Ambiol" required>
+                    <input type="file" name="Image" placeholder="Ambiol">
                 </div>
             </div>
 

@@ -110,7 +110,7 @@
             <div class="form-group row">
                 <label for="Image" class="col-2">image :</label>
                 <div class="col-10">
-                    <input type="file" value="{{$article->Image}}" name="Image" placeholder="Masukkan Nama Barang">
+                    <input type="file" name="Image" placeholder="Ambiol">
                 </div>
             </div>
             <button type="submit" style="background-color:#452414; color:white;">Simpan</button>
