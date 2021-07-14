@@ -73,7 +73,7 @@
             </div>
 
             <div class="form-group row">
-                <label for="Merk_Barang" class="col-2">Nama Barang:</label>
+                <label for="Merk_Barang" class="col-2">Merk Barang:</label>
                 <div class="col-10">
                     <input type="text" class="form-control" name="Merk_Barang" placeholder="Masukkan Merk barang"
                         required oninvalid="this.setCustomValidity('harap isikan Merk Barang')"

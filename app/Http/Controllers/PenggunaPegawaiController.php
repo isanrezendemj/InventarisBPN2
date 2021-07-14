@@ -44,6 +44,7 @@ class PenggunaPegawaiController extends Controller
         $Penggunapegawai->Status = $request->Status ;
         $Penggunapegawai->No_Aset = $request->No_Aset;
         $Penggunapegawai->Nama_Barang = $request->Nama_Barang;
+        $Penggunapegawai->Merk_Barang = $request->Merk_Barang;
         $Penggunapegawai->Kondisi = $request->Kondisi;
         $file=$request->file('Image');
         $file->move("storage/",$file->getClientOriginalName());
@@ -81,6 +82,7 @@ class PenggunaPegawaiController extends Controller
         $Penggunapegawai->Status = $request->Status ;
         $Penggunapegawai->No_Aset = $request->No_Aset;
         $Penggunapegawai->Nama_Barang = $request->Nama_Barang;
+        $Penggunapegawai->Merk_Barang = $request->Merk_Barang;
         $Penggunapegawai->Kondisi = $request->Kondisi;
 
         if($request->file('Image') != null){

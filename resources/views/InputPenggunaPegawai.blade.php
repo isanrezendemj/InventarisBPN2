@@ -84,6 +84,15 @@
             </div>
 
             <div class="form-group row">
+                <label for="Merk_Barang" class="col-2">Merk Barang:</label>
+                <div class="col-10">
+                    <input type="text" class="form-control" name="Merk_Barang" placeholder="Masukkan Merk barang"
+                        required oninvalid="this.setCustomValidity('harap isikan Merk Barang')"
+                        oninput="this.setCustomValidity('')" autocapitalize="off">
+                </div>
+            </div>
+
+            <div class="form-group row">
                 <label for="Kondisi" class="col-2">Kondisi:</label>
                 <div class="col-10">
                     <select type="text" name="Kondisi" class="form-control">
