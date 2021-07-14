@@ -41,6 +41,7 @@ class PenggunaBidangController extends Controller
         $PenggunaBidang->Nama_Bidang = $request->Nama_Bidang;
         $PenggunaBidang->No_Aset = $request->No_Aset;
         $PenggunaBidang->Nama_Barang = $request->Nama_Barang ;
+        $PenggunaBidang->Merk_Barang = $request->Merk_Barang ;
         $PenggunaBidang->Kondisi = $request->Kondisi;
         $file=$request->file('Image');
         $file->move("storage/", $file->getClientOriginalName());
@@ -76,6 +77,7 @@ class PenggunaBidangController extends Controller
         $PenggunaBidang->Nama_Bidang = $request->Nama_Bidang;
         $PenggunaBidang->No_Aset = $request->No_Aset;
         $PenggunaBidang->Nama_Barang = $request->Nama_Barang ;
+        $PenggunaBidang->Merk_Barang = $request->Merk_Barang ;
         $PenggunaBidang->Kondisi = $request->Kondisi;
         if ($request->file('Image') != null) {
             $file=$request->file('Image');

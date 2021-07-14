@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="form-group row">
+            <!-- <div class="form-group row">
                 <label for="Kode Bidang" class="col-2">Kode Bidang:</label>
                 <div class="col-10">
                     <input type="text" value="{{$article->Kode_Bidang}}" onkeypress="return angka(event)"
@@ -59,7 +59,9 @@
                         placeholder="Kode bidang" required oninvalid="this.setCustomValidity('harap isikan ')"
                         oninput="this.setCustomValidity('')" autocomplete="off">
                 </div>
-            </div>
+            </div> -->
+
+
             <div class="form-group row">
                 <label for="No_Aset" class="col-2">No Aset:</label>
                 <div class="col-10">
@@ -74,6 +76,16 @@
                 <div class="col-10">
                     <input type="text" value="{{$article->Nama_Barang}}" class="form-control" name="Nama_Barang"
                         placeholder="Nama Barang" required
+                        oninvalid="this.setCustomValidity('harap isikan dengan lengkap')"
+                        oninput="this.setCustomValidity('')" autocapitalize="off">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="Merk_Barang" class="col-2">Merk Barang:</label>
+                <div class="col-10">
+                    <input type="text" value="{{$article->Merk_Barang}}" class="form-control" name="Merk_Barang"
+                        placeholder="Merk Barang" required
                         oninvalid="this.setCustomValidity('harap isikan dengan lengkap')"
                         oninput="this.setCustomValidity('')" autocapitalize="off">
                 </div>

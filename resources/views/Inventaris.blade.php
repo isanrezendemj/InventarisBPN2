@@ -89,7 +89,7 @@ var qrcode = new QRCode("qrcode");
 $(".getQR").on('click', function() {
     $("#ambilGambar").addClass("disabled");
     let code = $(this).data('code')
-.toString(); ///code di ambil dri parameter data-code dan kemudian dibuat string
+        .toString(); ///code di ambil dri parameter data-code dan kemudian dibuat string
     //console.log(code);
     qrcode.makeCode(code); ///qr code di ambek dri var qr code  makecode merupakan method dri class QRCode
     $('.codeValue').html(code);

@@ -12,6 +12,6 @@ class Pengguna_bidang extends Model
     protected $table ="pengguna_bidang";
     protected $primaryKey = 'id';
     protected $fillable = [
-        'id','Kode_Bidang', 'Nama_Bidang','No_Aset','Nama_Barang','Kondisi','Image'
+        'id','Kode_Bidang', 'Nama_Bidang','No_Aset','Nama_Barang','Merk_Barang','Kondisi','Image'
     ];
 }
