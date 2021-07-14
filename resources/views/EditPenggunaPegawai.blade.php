@@ -19,7 +19,7 @@
                     <input type="text" value="{{$article->NRP_NIK}}" onkeypress="return angka(event)"
                         class="form-control" name="NRP_NIK" placeholder="NRP/NIK" required
                         oninvalid="this.setCustomValidity('harap isikan nrp/nik')" oninput="this.setCustomValidity('')"
-                        autocomplete="off">
+                        autocomplete="off" readonly="readonly">
                 </div>
             </div>
 
@@ -95,8 +95,8 @@
             <div class="form-group row">
                 <label for="Kondisi" class="col-2">Kondisi:</label>
                 <div class="col-10">
-                    <select type="text" value="{{$article->Kondisi}}" name="Kondisi" id="kondisi" class="form-control">
-                        <option value="">Kondisi</option>
+                    <select type="text" name="Kondisi" id="kondisi" class="form-control">
+                        <option value="{{ $article->Kondisi }}">{{ $article->Kondisi }}</option>
                         <option value="bagus">Bagus</option>
                         <option value="Rusak">Rusak</option>
 
