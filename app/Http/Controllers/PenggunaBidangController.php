@@ -35,6 +35,12 @@ class PenggunaBidangController extends Controller
      */
     public function store(Request $request)
     {
+
+        $request->validate([
+           
+            'No_Aset' => 'required|unique:App\Models\Pengguna_bidang',
+          ]);
+
         $PenggunaBidang = new Pengguna_bidang();
         $PenggunaBidang->id = $request->id;
         $PenggunaBidang->Kode_Bidang = $request->Kode_Bidang;
