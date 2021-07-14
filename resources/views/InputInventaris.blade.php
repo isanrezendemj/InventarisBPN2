@@ -27,7 +27,7 @@
 
 
         <div class="form-group row">
-            <label for="No Aset" class="col-2">Kode Aset:</label>
+            <label for="No Aset" class="col-2">No Aset:</label>
             <div class="col-10">
                 <input type="text" class="form-control @error ('No_Aset') is-invalid @enderror" name="No_Aset"
                     placeholder="Kode Aset" required oninvalid="this.setCustomValidity('harap isikan dengan lengkap')"

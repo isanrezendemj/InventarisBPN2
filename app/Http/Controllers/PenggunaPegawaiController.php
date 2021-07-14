@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Pengguna_pegawai;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rules\Unique;
 
 class PenggunaPegawaiController extends Controller
 {
@@ -36,7 +37,12 @@ class PenggunaPegawaiController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($_FILES['Image']);
+
+      $request->validate([
+        'NRP_NIK' => 'required|unique:App\Models\Pengguna_pegawai',
+        'No_Aset' => 'required|unique:App\Models\Pengguna_pegawai',
+      ]);
+
         $Penggunapegawai = new Pengguna_pegawai();
         $Penggunapegawai->NRP_NIK = $request->NRP_NIK;
         $Penggunapegawai->Nama_Pegawai_PPNPN = $request->Nama_Pegawai_PPNPN;
