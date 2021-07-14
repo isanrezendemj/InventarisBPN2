@@ -41,6 +41,9 @@ class RegisterMobileController extends Controller
     
         $RegisterMobile = new tb_security_code();
         //$RegisterMobile->id_security = $request->id_security;
+       
+    
+        $RegisterMobile = new tb_security_code();
         $RegisterMobile->nama = $request->nama;
         $RegisterMobile->code = $request->code;
      

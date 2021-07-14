@@ -22,6 +22,7 @@
                 <th>Nama Bidang</th>
                 <th>No Aset</th>
                 <th>Nama Barang</th>
+                <th>Merk Barang</th>
                 <th>Kondisi</th>
                 <th>Image</th>
                 <th>Aksi</th>
@@ -36,6 +37,7 @@
                 <td scope="row">{{ $test->Nama_Bidang }}</td>
                 <td scope="row">{{ $test->No_Aset }}</td>
                 <td scope="row">{{ $test->Nama_Barang}}</td>
+                <td scope="row">{{ $test->Merk_Barang}}</td>
                 <td scope="row">{{ $test->Kondisi}}</td>
                 <td scope="row"><img src="{{ 'storage/'.$test->Image }}" width="100px" /></td>
                 <td>

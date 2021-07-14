@@ -27,7 +27,7 @@
 
 
         <div class="form-group row">
-            <label for="No Aset" class="col-2">Kode Aset:</label>
+            <label for="No Aset" class="col-2">No Aset:</label>
             <div class="col-10">
                 <input type="text" class="form-control @error ('No_Aset') is-invalid @enderror" name="No_Aset"
                     placeholder="Kode Aset" required oninvalid="this.setCustomValidity('harap isikan dengan lengkap')"
@@ -61,8 +61,8 @@
         <div class="form-group row">
             <label for="Rupiah Aset" class="col-2">Rupiah Aset:</label>
             <div class="col-10">
-                <input type="text" class="form-control" name="Rupiah_Aset" placeholder="Rupiah Aset" required
-                    oninvalid="this.setCustomValidity('harap isikan dengan lengkap')"
+                <input type="text" class="form-control" name="Rupiah_Aset" placeholder="Rupiah Aset" id="rupiah"
+                    required oninvalid="this.setCustomValidity('harap isikan dengan lengkap')"
                     oninput="this.setCustomValidity('')" autocapitalize="off">
             </div>
         </div>

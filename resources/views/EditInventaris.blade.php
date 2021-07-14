@@ -96,8 +96,8 @@
             <div class="form-group row">
                 <label for="Kondisi" class="col-2">Kondisi:</label>
                 <div class="col-10">
-                    <select type="text" value="{{$article->Kondisi}}" name="Kondisi" id="kondisi" class="form-control">
-                        <option value="">Kondisi Barang</option>
+                    <select type="text" name="Kondisi" id="kondisi" class="form-control">
+                        <option value="{{ $article->Kondisi }}">{{ $article->Kondisi }}</option>
                         <option value="bagus">Bagus</option>
                         <option value="rusak">Rusak</option>
 

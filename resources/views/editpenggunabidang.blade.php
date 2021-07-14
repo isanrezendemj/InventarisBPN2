@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="form-group row">
+            <!-- <div class="form-group row">
                 <label for="Kode Bidang" class="col-2">Kode Bidang:</label>
                 <div class="col-10">
                     <input type="text" value="{{$article->Kode_Bidang}}" onkeypress="return angka(event)"
@@ -59,7 +59,9 @@
                         placeholder="Kode bidang" required oninvalid="this.setCustomValidity('harap isikan ')"
                         oninput="this.setCustomValidity('')" autocomplete="off">
                 </div>
-            </div>
+            </div> -->
+
+
             <div class="form-group row">
                 <label for="No_Aset" class="col-2">No Aset:</label>
                 <div class="col-10">
@@ -80,10 +82,20 @@
             </div>
 
             <div class="form-group row">
+                <label for="Merk_Barang" class="col-2">Merk Barang:</label>
+                <div class="col-10">
+                    <input type="text" value="{{$article->Merk_Barang}}" class="form-control" name="Merk_Barang"
+                        placeholder="Merk Barang" required
+                        oninvalid="this.setCustomValidity('harap isikan dengan lengkap')"
+                        oninput="this.setCustomValidity('')" autocapitalize="off">
+                </div>
+            </div>
+
+            <div class="form-group row">
                 <label for="Kondisi" class="col-2">Kondisi:</label>
                 <div class="col-10">
-                    <select type="text" value="{{$article->Kondisi}}" name="Kondisi" id="kondisi" class="form-control">
-                        <option value="">Kondisi Barang</option>
+                    <select type="text" name="Kondisi" id="kondisi" class="form-control">
+                        <option value="{{ $article->Kondisi }}">{{ $article->Kondisi }}</option>
                         <option value="bagus">Bagus</option>
                         <option value="rusak">Rusak</option>
 
@@ -97,7 +109,7 @@
             <div class="form-group row">
                 <label for="Image" class="col-2">Image :</label>
                 <div class="col-10">
-                    <input type="file" name="Image" placeholder="Ambiol" required>
+                    <input type="file" name="Image" placeholder="Ambiol">
                 </div>
             </div>
 

@@ -19,7 +19,7 @@
                     <input type="text" value="{{$article->NRP_NIK}}" onkeypress="return angka(event)"
                         class="form-control" name="NRP_NIK" placeholder="NRP/NIK" required
                         oninvalid="this.setCustomValidity('harap isikan nrp/nik')" oninput="this.setCustomValidity('')"
-                        autocomplete="off">
+                        autocomplete="off" readonly="readonly">
                 </div>
             </div>
 
@@ -93,10 +93,20 @@
             </div>
 
             <div class="form-group row">
+                <label for="Merk_Barang" class="col-2">Merk Barang:</label>
+                <div class="col-10">
+                    <input type="text" value="{{$article->Merk_Barang}}" class="form-control" name="Merk_Barang"
+                        placeholder="Merk Barang" required
+                        oninvalid="this.setCustomValidity('harap isikan dengan lengkap')"
+                        oninput="this.setCustomValidity('')" autocapitalize="off">
+                </div>
+            </div>
+
+            <div class="form-group row">
                 <label for="Kondisi" class="col-2">Kondisi:</label>
                 <div class="col-10">
-                    <select type="text" value="{{$article->Kondisi}}" name="Kondisi" id="kondisi" class="form-control">
-                        <option value="">Kondisi</option>
+                    <select type="text" name="Kondisi" id="kondisi" class="form-control">
+                        <option value="{{ $article->Kondisi }}">{{ $article->Kondisi }}</option>
                         <option value="bagus">Bagus</option>
                         <option value="Rusak">Rusak</option>
 
@@ -110,7 +120,7 @@
             <div class="form-group row">
                 <label for="Image" class="col-2">image :</label>
                 <div class="col-10">
-                    <input type="file" value="{{$article->Image}}" name="Image" placeholder="Masukkan Nama Barang">
+                    <input type="file" name="Image" placeholder="Ambiol">
                 </div>
             </div>
             <button type="submit" style="background-color:#452414; color:white;">Simpan</button>

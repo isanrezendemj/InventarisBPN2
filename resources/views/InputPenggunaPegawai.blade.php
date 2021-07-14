@@ -11,6 +11,16 @@
 <div class="container">
     <div class="container">
 
+        @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+
         <form action="/simpan-data-pegawai" method="post" enctype="multipart/form-data">
             @csrf
 
@@ -20,6 +30,7 @@
                     <input type="text" onkeypress="return angka(event)" class="form-control" name="NRP_NIK"
                         placeholder="NRP/NIK" required oninvalid="this.setCustomValidity('harap isikan nrp/nik')"
                         oninput="this.setCustomValidity('')" autocomplete="off">
+
                 </div>
             </div>
 
@@ -79,6 +90,15 @@
                 <div class="col-10">
                     <input type="text" class="form-control" name="Nama_Barang" placeholder="Masukkan Nama Barang"
                         required oninvalid="this.setCustomValidity('harap isikan nama ')"
+                        oninput="this.setCustomValidity('')" autocapitalize="off">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="Merk_Barang" class="col-2">Merk Barang:</label>
+                <div class="col-10">
+                    <input type="text" class="form-control" name="Merk_Barang" placeholder="Masukkan Merk barang"
+                        required oninvalid="this.setCustomValidity('harap isikan Merk Barang')"
                         oninput="this.setCustomValidity('')" autocapitalize="off">
                 </div>
             </div>

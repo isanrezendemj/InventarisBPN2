@@ -12,6 +12,6 @@ class Pengguna_pegawai extends Model
     protected $table ="pengguna_pegawai";
     protected $primaryKey = 'NRP_NIK';
     protected $fillable = [
-        'NRP_NIK', 'Nama_Pegawai_PPNPN','Bidang','Status','Kode_Barang','Nama_Barang','Kategori','Image'
+        'NRP_NIK', 'Nama_Pegawai_PPNPN','Bidang','Status','Kode_Barang','Nama_Barang','Merk_Barang','Kategori','Image'
     ];
 }

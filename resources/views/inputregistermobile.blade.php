@@ -14,6 +14,7 @@
         <form action="{{ route('simpan-data-mobile') }}" method="post" enctype="multipart/form-data">
             @csrf
 
+<<<<<<< HEAD
 	    <!--
             <div class="form-group row">
                 <label for="id_security" class="col-2">id:</label>
@@ -25,6 +26,8 @@
                 </div>
             </div>
 	    -->
+=======
+>>>>>>> 157dfebb94659faf62e50e16fba3d3debf3459ff
 
             <div class="form-group row">
                 <label for="nama" class="col-2">Nama:</label>
