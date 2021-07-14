@@ -39,6 +39,7 @@ class PenggunaBidangController extends Controller
         $request->validate([
            
             'No_Aset' => 'required|unique:App\Models\Pengguna_bidang',
+            
           ]);
 
         $PenggunaBidang = new Pengguna_bidang();

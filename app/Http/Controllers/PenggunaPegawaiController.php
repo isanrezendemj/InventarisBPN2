@@ -41,6 +41,7 @@ class PenggunaPegawaiController extends Controller
       $request->validate([
         'NRP_NIK' => 'required|unique:App\Models\Pengguna_pegawai',
         'No_Aset' => 'required|unique:App\Models\Pengguna_pegawai',
+        'Nama_Pegawai_PPNPN' => 'required|unique:App\Models\Pengguna_pegawai',
       ]);
 
         $Penggunapegawai = new Pengguna_pegawai();
